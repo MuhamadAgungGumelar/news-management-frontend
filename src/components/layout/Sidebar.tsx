@@ -47,7 +47,7 @@ const Sidebar: React.FC = () => {
   return (
     <div className="w-[260px] bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 h-screen fixed left-0 top-0 overflow-y-auto">
       <div className="h-[60px] flex items-center justify-start pl-8 border-b border-gray-200 dark:border-gray-700">
-        <h2 className="text-xl font-bold text-red-500">News System</h2>
+        <h2 className="text-xl font-bold text-red-500">News Management</h2>
       </div>
 
       <div className="flex flex-col gap-1 p-4">
@@ -65,7 +65,9 @@ const Sidebar: React.FC = () => {
       <hr className="border-gray-200 dark:border-gray-700" />
 
       <div className="p-4">
-        <p className="text-xs text-gray-500 dark:text-gray-400 text-center">v1.0.0</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+          v1.0.0
+        </p>
       </div>
     </div>
   );
