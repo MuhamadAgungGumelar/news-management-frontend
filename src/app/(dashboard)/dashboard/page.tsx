@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
-import useUIStore from '@/store/uiStore';
-import { useAnalytics } from '@/hooks/useAnalytics';
-import SummaryCards from '@/components/dashboard/SummaryCards';
-import DateRangeFilter from '@/components/dashboard/DateRangeFilter';
-import CategoryPieChart from '@/components/dashboard/CategoryPieChart';
-import TimelineColumnChart from '@/components/dashboard/TimelineColumnChart';
-import LoadingSpinner from '@/components/common/LoadingSpinner';
-import ErrorAlert from '@/components/common/ErrorAlert';
+import React from "react";
+import useUIStore from "@/store/uiStore";
+import { useAnalytics } from "@/hooks/useAnalytics";
+import SummaryCards from "@/components/dashboard/SummaryCards";
+import DateRangeFilter from "@/components/dashboard/DateRangeFilter";
+import CategoryPieChart from "@/components/dashboard/CategoryPieChart";
+import TimelineColumnChart from "@/components/dashboard/TimelineColumnChart";
+import LoadingSpinner from "@/components/common/LoadingSpinner";
+import ErrorAlert from "@/components/common/ErrorAlert";
 
 export default function DashboardPage() {
   const { dashboardDateRange, setDashboardDateRange } = useUIStore();
@@ -36,7 +36,9 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Analytics Dashboard</h1>
+        <h1 className="text-2xl font-bold dark:text-white">
+          Analytics Dashboard
+        </h1>
       </div>
 
       {/* Summary Cards */}
