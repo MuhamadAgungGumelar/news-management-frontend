@@ -94,7 +94,7 @@ const ArticleForm: React.FC<ArticleFormProps> = ({ id }) => {
         await articlesApi.createArticle(data);
         toast.success("Article created successfully");
       }
-      router.push("/management");
+      router.push("/articles");
     } catch (error: unknown) {
       let message = isEdit
         ? "Failed to update article"
