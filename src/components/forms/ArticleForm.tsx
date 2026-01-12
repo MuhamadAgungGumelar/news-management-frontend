@@ -129,11 +129,11 @@ const ArticleForm: React.FC<ArticleFormProps> = ({ id }) => {
     return (
       <div className="mx-auto">
         <Breadcrumb
-          backLink="/management"
+          backLink="/articles"
           currentPage="Edit Article"
           breadcrumbItems={[
             { link: "/dashboard", name: "Dashboard" },
-            { link: "/management", name: "Management" },
+            { link: "/articles", name: "Articles" },
           ]}
         />
         <ErrorAlert
@@ -148,7 +148,7 @@ const ArticleForm: React.FC<ArticleFormProps> = ({ id }) => {
     <div className="mx-auto">
       {/* Breadcrumb */}
       <Breadcrumb
-        backLink="/management"
+        backLink="/articles"
         currentPage={isEdit ? "Edit Article" : "Create New Article"}
         breadcrumbItems={[
           { link: "/dashboard", name: "Dashboard" },
